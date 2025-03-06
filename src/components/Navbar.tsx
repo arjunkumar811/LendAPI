@@ -20,14 +20,14 @@ export default function Navbar() {
 
   // Close dropdowns when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (productDropdownRef.current && !productDropdownRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (productDropdownRef.current && !(productDropdownRef.current as HTMLElement).contains(event.target as Node)) {
         setIsProductDropdownOpen(false);
       }
-      if (solutionsDropdownRef.current && !solutionsDropdownRef.current.contains(event.target)) {
+      if (solutionsDropdownRef.current && !(solutionsDropdownRef.current as HTMLElement).contains(event.target as Node)) {
         setIsSolutionsDropdownOpen(false);
       }
-      if (resourcesDropdownRef.current && !resourcesDropdownRef.current.contains(event.target)) {
+      if (resourcesDropdownRef.current && !(resourcesDropdownRef.current as HTMLElement).contains(event.target as Node)) {
         setIsResourcesDropdownOpen(false);
       }
     };
