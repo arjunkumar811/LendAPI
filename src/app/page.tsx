@@ -6,6 +6,10 @@ import Tracker from "@/components/Tracker";
 import ImageComponent from "@/components/TestimonialSection";
 import TestimonialSlider from "@/components/TestimonialSection";
 import TestimonialSection from "@/components/TestimonialSection";
+import TextSection from "@/components/TextSection";
+import TextWithImages from "@/components/TextSection";
+import Footer from "@/components/Footer";
+
 
 export default function Home() {
   return (
@@ -15,7 +19,8 @@ export default function Home() {
       <SecondPage />
       <Tracker />
       <TestimonialSection />
-
+      <TextWithImages />
+      <Footer />
     </div>
   );
 }
